@@ -39,21 +39,18 @@ public class Usuario {
 	@JsonIgnoreProperties({"criador"})
 	private List<Postagem> minhasPostagem = new ArrayList<>();
 	
-	public Usuario() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-
-	public Usuario(Long id, String nome,String email,String senha, String usuario) {
-		super();
+	public Usuario(Long id,  String nome,String usuario,String senha,String email) {
 		this.id = id;
 		this.nome = nome;
 		this.usuario = usuario;
 		this.senha = senha;
 		this.email = email;
-		
 	}
 
+	public Usuario() {
+		
+		// TODO Auto-generated constructor stub
+	}
 	public List<Postagem> getMinhasPostagem() {
 		return minhasPostagem;
 	}
